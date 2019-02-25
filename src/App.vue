@@ -16,14 +16,7 @@ export default {
     "product-list-two": ProductListTwo
   },
   data() {
-    return {
-      products: [
-        { name: "Banana", price: 20 },
-        { name: "Orange", price: 40 },
-        { name: "Apple", price: 60 },
-        { name: "Mango", price: 80 }
-      ]
-    };
+    return {};
   }
 };
 </script>

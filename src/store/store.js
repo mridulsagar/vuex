@@ -5,6 +5,7 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
+    strict: true,
     state: {
         products: [{
                 name: "Banana",
@@ -34,6 +35,13 @@ export const store = new Vuex.Store({
             })
 
             return saleProducts;
+        }
+    },
+    mutations: {
+        reducePrice: state => {
+            state.products.forEach(product => {
+                product.price -= 1;
+            });
         }
     }
 })
